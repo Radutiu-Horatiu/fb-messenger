@@ -1,0 +1,6 @@
+.navbar-container {
+  display: flex;
+  padding: 1vh;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
