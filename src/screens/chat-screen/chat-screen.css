@@ -1,17 +1,23 @@
 .chat-screen {
   display: flex;
   width: 100%;
-  height: 90vh;
+  height: 92vh;
 }
 
 .half-screen {
   width: 100%;
-  border:1px solid #ccc;
+  border:1px solid rgb(112, 110, 110, 0.2);
   border-top: 0px;
   padding: 1vh;
 }
 
 .chat-heads {
-  width: 35%;
+  width: 25%;
   border-right: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .chat-heads {
+    width: 50%;
+  }
 }

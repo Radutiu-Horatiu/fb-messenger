@@ -2,5 +2,103 @@
   display: flex;
   padding: 1vh;
   align-items: center;
-  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(112, 110, 110, 0.2);
+}
+
+.navbar-logo {
+  height: 4vh;
+  width: 4vh;
+  border-radius: 50%;
+}
+
+.navbar-logo-search {
+  height: 4vh;
+  width: 4vh;
+  border-radius: 50%;
+  background-color: #3a3b3c;
+}
+
+.nav-item {
+  padding: 1vh;
+}
+
+.log-out-button {
+  cursor: pointer;
+  color: dodgerblue;
+  margin-left: 0.5vh;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.log-out-button svg {
+  margin-right: 0.5vh;
+}
+
+.navbar-text {
+  font-weight: bold;
+  font-size: 2vh;
+  margin-left: 2vh;
+}
+
+.nav-search-container {
+  display: flex;
+}
+
+.nav-search-container-input-bar {
+  width: 30vh;
+  margin-left: 1vh;
+  padding-left: 1vh;
+  background-color: #3a3b3c;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-search-text {
+    display: none;
+  }
+
+  .nav-search-container-input-bar {
+    width: 3vh;
+    height: 4vh;
+  }
+}
+
+.nav-search-text {
+  background-color: transparent;
+}
+
+.chat-head-item-navbar {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.menu-buttons svg{
+  font-size: 2.7vh;
+  margin:0vh 2vh 0vh 2vh;
+  cursor: pointer;
+  color: #ccc;
+  border-radius: 10px;
+  padding: 1vh 3vh 1vh 3vh;
+}
+
+.menu-buttons svg:hover{
+  background-color: rgb(112, 110, 110, 0.2);
+}
+
+.navbar-container .user-profile-pic-container {
+  height: 3vh;
+  width: 3vh;
+}
+
+.navbar-container .user-profile-pic-text {
+  font-size: 2.8vh;
 }

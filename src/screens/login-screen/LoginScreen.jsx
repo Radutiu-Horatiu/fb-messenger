@@ -6,6 +6,7 @@ import { addDoc, collection } from "@firebase/firestore";
 import React, { useRef } from "react";
 import { useHistory } from "react-router-dom";
 import { auth, db } from "../../firebase";
+import "./login-screen.css";
 
 export default function LoginScreen({ setUser }) {
   let history = useHistory();
@@ -49,7 +50,7 @@ export default function LoginScreen({ setUser }) {
 
       history.push("/chat");
     } catch (error) {
-      console.log(error);
+      alert(error);
     }
   };
 
@@ -83,7 +84,7 @@ export default function LoginScreen({ setUser }) {
 
       history.push("/chat");
     } catch (error) {
-      console.log(error);
+      alert(error);
     }
   };
 
@@ -98,20 +99,20 @@ export default function LoginScreen({ setUser }) {
   }, [history, setUser]);
 
   return (
-    <div>
-      <p>Login Screen</p>
+    <div className="login-screen-container">
+      <p className="login-title">Welcome!</p>
 
       <div>
         <p>Email</p>
-        <input ref={email} />
+        <input placeholder="your.email@example.com" ref={email} />
       </div>
 
       <div>
         <p>Password</p>
-        <input type="password" ref={password} />
+        <input type="password" placeholder="Strong passowrd" ref={password} />
       </div>
 
-      <button onClick={register}>Register</button>
+      <button onClick={register} className="register-button">Register</button>
       <button onClick={login}>Login</button>
     </div>
   );

@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #242526;
 }
 
 code {
@@ -14,4 +16,51 @@ code {
 
 p {
   margin: 5px;
+  color: white;
+}
+
+input {
+  background-color: #3A3B3C;
+  outline: none;
+  border: none;
+  color:#ccc;
+  padding: 0.8vh;
+  font-size: 1.5vh;
+  border-radius: 20px;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid dodgerblue;
+  padding: 0.8vh 5vh 0.8vh 5vh;
+  border-radius: 20px;
+  color: dodgerblue;
+  font-weight: bold;
+  font-size: 1.5vh;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(112, 110, 110, 0.2);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:rgb(112, 110, 110, 0.2);
 }

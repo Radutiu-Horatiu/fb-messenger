@@ -21,7 +21,7 @@ export default function ChatScreen({ setUser, user }) {
     // if no user -> redirect
     if (user) setUser(user);
     else history.push("/");
-  }, []);
+  }, [history, setUser]);
 
   React.useEffect(() => {
     if (!user) return;

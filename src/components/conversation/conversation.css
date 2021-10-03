@@ -5,8 +5,17 @@
 }
 
 .input-container {
-  margin-right: 1vh;
   display: flex;
+  padding-top: 1vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-container svg {
+  color: dodgerblue;
+  font-size: 3vh;
+  margin: 0vh 2vh 0vh 2vh;
+  cursor: pointer;
 }
 
 .input-message,
@@ -29,4 +38,41 @@
   border-radius: 10px;
   min-width: 8vh;
   color: white;
+}
+
+.user-conversation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.user-conv-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-conv-header-container svg {
+  margin: 0vh 1vh 0vh 1vh;
+  cursor: pointer;
+}
+
+.no-conversation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.no-conversation p {
+  font-weight: bold;
+  font-size: 4vh;
+  color: rgb(112, 110, 110, 0.2);
+}
+
+.no-conversation svg {
+  font-size: 10vh;
+  color: rgb(112, 110, 110, 0.2);
 }
