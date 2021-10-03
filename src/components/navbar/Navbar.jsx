@@ -10,6 +10,7 @@ import {
   FaTv,
   FaUsers,
 } from "react-icons/fa";
+import ICON from "../../assets/icon.png";
 
 export default function Navbar({ user, setUser }) {
   let history = useHistory();
@@ -24,11 +25,7 @@ export default function Navbar({ user, setUser }) {
     <div className="navbar-container">
       {/* Left */}
       <div className="nav-search-container">
-        <img
-          src="http://www.casa-sancrai.ro/image/facebook_icon_130940.png"
-          className="navbar-logo"
-          alt="navbar-logo"
-        />
+        <img src={ICON} className="navbar-logo" alt="navbar-logo" />
         <div className="nav-search-container-input-bar">
           <FaSearch color="#ccc" />
           <input className="nav-search-text" placeholder="Search on Facebook" />
