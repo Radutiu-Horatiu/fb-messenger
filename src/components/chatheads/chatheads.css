@@ -53,3 +53,9 @@
   border-radius: 50%;
   cursor: pointer;
 }
+
+.chat-heads-container {
+  overflow-y: scroll;
+  height: 80vh;
+  padding-right: 10px;
+}
